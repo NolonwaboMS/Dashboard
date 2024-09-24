@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Assignment Layout</title>
+    <style>
+  /* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.summaries, .bike-brands, .message, .shops {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.summaries h3, .bike-brands h3, .shops h3 {
+    margin-top: 0;
+}
+
+.summaries a, .shops a, .bike-brands a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+/* Main grid areas */
+.summaries {
+    grid-column: 1 / 2;
+}
+
+.main-image img {
+    width: 100%;  /* Ensures the image doesn't overflow */
+    height: auto;
+    max-height: 400px;  /* Set a max height to prevent the image from being too large */
+    object-fit: cover;  /* Crop the image if necessary */
+}
+
+.bike-brands {
+    grid-column: 3 / 4;
+}
+
+/* Center the message */
+.message {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Shops section */
+.shops {
+    margin-top: 20px;
+    grid-column: 2 / 3;
+}
+nav {
+    
+    padding: 2px;
+    border-bottom: 1px solid black;
+    margin-left: 600px;
+    
+
+}
+nav .actions {
+    display: flex;
+    justify-content:space-between;
+    text-decoration: none;
+}
+nav .actions a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="actions">
+            <a href="#">Buyers</a>
+            <a href="#">Sellers</a>
+            <a href="#">Bikes</a>
+            <a href="#">Stores</a>
+            <a href="#">Price</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Summaries Section -->
+        <div class="summaries">
+            <h3>Summaries</h3>
+            <a href="#">New stocks</a>
+            <a href="#">Listed for sale</a>
+            <a href="#">Total sold</a>
+            <a href="#">Sales per brand</a>
+            <a href="#">Listings total</a>
+            <a href="#">Average sales per brand</a>
+            <a href="#">Totals per brand</a>
+            <a href="#">Totals by stores</a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="main-image">
+            <img src="images/bicycle.jpg" alt="Bicycles">
+             <!-- Message Section -->
+
+        <div class="message">
+            <p>We help your dreams come true!!</p>
+            <p>We help you sell, and help you buy!!</p>
+            <p>We connect you to the global bicycle market!!</p>
+        </div>
+        </div>
+
+        <!-- Bike Brands Section -->
+         
+        <div class="bike-brands">
+            <h3>Bike Brands</h3>
+            <a href="#">Electra</a>
+            <a href="#">Haro</a>
+            <a href="#">Heller</a>
+            <a href="#">Trek</a>
+            <a href="#">Pure Cycles</a>
+            <a href="#">Ritchey</a>
+            <a href="#">Sun bicycles</a>
+            <a href="#">Surly</a>
+            <a href="#">Strider</a>
+        
+            <!-- Shops Section -->
+        <div class="shops">
+            <h3>Our shops globally</h3>
+            <a href="#">United States of America</a>
+            <a href="#">United Kingdom</a>
+            <a href="#">South Africa</a>
+        </div>
+        </div>
+
+      
+
+        
+    </div>
+
+</body>
+</html>
+
